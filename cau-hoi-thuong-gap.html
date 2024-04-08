@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html  >
+<html lang="vi"   >
 <head>
   
   <meta charset="UTF-8">
@@ -26,7 +26,43 @@
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
 
   
-  
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://tr.anphabe.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P9VZ8L');</script>
+<!-- End Google Tag Manager -->
+<script>
+function keep_url_query(){
+    let query = window.location.search;
+    
+    if(query == "") {
+        return false;
+    }
+    let searchParams = new URLSearchParams(query);
+
+    let atags = document.getElementsByTagName("a"); 
+    let i;
+    for (i = 0; i < atags.length; i++) {
+        let new_url = new URL(atags[i].href);
+        for (const [key, value] of searchParams) {
+            new_url.searchParams.set(key, value);
+        }
+        atags[i].href = new_url.toString();  
+    } 
+
+}
+
+if (
+    document.readyState === "complete" ||
+    (document.readyState !== "loading" && !document.documentElement.doScroll)
+) {
+  keep_url_query();
+} else {
+  document.addEventListener("DOMContentLoaded", keep_url_query);
+}
+</script>
   
 </head>
 <body>
@@ -94,10 +130,10 @@
                         <strong>Câu hỏi thường gặp</strong></h3>
                     
                 </div>
-                <div id="bootstrap-accordion_31" class="panel-group accordionStyles accordion" role="tablist" aria-multiselectable="true">
+                <div id="bootstrap-accordion_32" class="panel-group accordionStyles accordion" role="tablist" aria-multiselectable="true">
                     <div class="card">
                         <div class="card-header" role="tab" id="headingOne">
-                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse1_31" aria-expanded="false" aria-controls="collapse1">
+                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse1_32" aria-expanded="false" aria-controls="collapse1">
                                 <div class="panel-wrap">
                                     <p class="panel-number mbr-fonts-style display-4">
                                         01</p>
@@ -106,7 +142,7 @@
                                 <div class="icon-wrapper"><span class="sign mbr-iconfont mobi-mbri-plus mobi-mbri mbri-arrow-down"></span></div>
                             </a>
                         </div>
-                        <div id="collapse1_31" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_31">
+                        <div id="collapse1_32" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_32">
                             <div class="panel-body">
                                 <div class="panel-padding"></div>
                                 <p class="mbr-fonts-style panel-text display-4">Chứng nhận Doanh Nghiệp có Nguồn Nhân Lực Hạnh Phúc là minh chứng thể hiện sự ghi nhận về mức độ hài lòng và hạnh phúc của nhân viên nội bộ dành cho doanh nghiệp đang làm việc và sự quan tâm và nỗ lực của doanh nghiệp đó trong việc chăm lo cho môi trường làm việc và đời sống người lao động. Thông qua các mô hình đánh giá chuyên nghiệp và dựa trên kết quả khảo sát toàn diện từ nhân viên tới lãnh đạo doanh nghiệp, khi các minh chứng thực tế và dữ liệu khảo sát đáp ứng được mức chuẩn của chương trình, doanh nghiệp sẽ được Ban Tổ Chức trao Chứng nhận “Doanh Nghiệp có Nguồn Nhân Lực Hạnh Phúc”.​</p>
@@ -116,7 +152,7 @@
                     
                     <div class="card">
                         <div class="card-header" role="tab" id="headingTwo">
-                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse2_31" aria-expanded="false" aria-controls="collapse2">
+                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse2_32" aria-expanded="false" aria-controls="collapse2">
                                 <div class="panel-wrap">
                                     <p class="panel-number mbr-fonts-style display-4">
                                         02</p>
@@ -125,7 +161,7 @@
                                 <div class="icon-wrapper"><span class="sign mbr-iconfont mobi-mbri-plus mobi-mbri mbri-arrow-down"></span></div>
                             </a>
                         </div>
-                        <div id="collapse2_31" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_31">
+                        <div id="collapse2_32" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_32">
                             <div class="panel-body">
                                 <div class="panel-padding"></div>
                                 <p class="mbr-fonts-style panel-text display-4">Công ty cần đăng ký trước ngày <strong>29/4/2024</strong> cho đợt 1, và trước <strong>31/10/2024</strong> cho đợt 2.​</p>
@@ -135,7 +171,7 @@
 
                     <div class="card">
                         <div class="card-header" role="tab" id="headingThree">
-                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse3_31" aria-expanded="false" aria-controls="collapse3">
+                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse3_32" aria-expanded="false" aria-controls="collapse3">
                                 <div class="panel-wrap">
                                     <p class="panel-number mbr-fonts-style display-4">
                                         03</p>
@@ -144,7 +180,7 @@
                                 <div class="icon-wrapper"><span class="sign mbr-iconfont mobi-mbri-plus mobi-mbri mbri-arrow-down"></span></div>
                             </a>
                         </div>
-                        <div id="collapse3_31" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_31">
+                        <div id="collapse3_32" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_32">
                             <div class="panel-body">
                                 <div class="panel-padding"></div>
                                 <ul class="list mbr-fonts-style panel-text display-4">
@@ -156,7 +192,7 @@
                     </div>
                     <div class="card">
                         <div class="card-header" role="tab" id="headingFour">
-                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse4_31" aria-expanded="false" aria-controls="collapse4">
+                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse4_32" aria-expanded="false" aria-controls="collapse4">
                                 <div class="panel-wrap">
                                     <p class="panel-number mbr-fonts-style display-4">
                                         04</p>
@@ -165,7 +201,7 @@
                                 <div class="icon-wrapper"><span class="sign mbr-iconfont mobi-mbri-plus mobi-mbri mbri-arrow-down"></span></div>
                             </a>
                         </div>
-                        <div id="collapse4_31" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingFour" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_31">
+                        <div id="collapse4_32" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingFour" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_32">
                             <div class="panel-body">
                                 <div class="panel-padding"></div>
                                 <p class="mbr-fonts-style panel-text display-4">Tiếng Việt là mặc định trong tất cả nội dung Bảng câu hỏi khảo sát, Báo cáo kết quả và Bộ công cụ truyền thông vinh danh tiêu chuẩn. Khi có yêu cầu về tiếng Anh, vui lòng liên hệ Anphabe để được tư vấn thêm.​</p>
@@ -174,7 +210,7 @@
                     </div>
                     <div class="card">
                         <div class="card-header" role="tab" id="headingFive">
-                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse5_31" aria-expanded="false" aria-controls="collapse5">
+                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse5_32" aria-expanded="false" aria-controls="collapse5">
                                 <div class="panel-wrap">
                                     <p class="panel-number mbr-fonts-style display-4">
                                         05</p>
@@ -183,7 +219,7 @@
                                 <div class="icon-wrapper"><span class="sign mbr-iconfont mobi-mbri-plus mobi-mbri mbri-arrow-down"></span></div>
                             </a>
                         </div>
-                        <div id="collapse5_31" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingFive" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_31">
+                        <div id="collapse5_32" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingFive" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_32">
                             <div class="panel-body">
                                 <div class="panel-padding"></div>
                                 <p class="mbr-fonts-style panel-text display-4">Khảo sát này không bắt buộc 100% nhân viên công ty thực hiện, tuy nhiên cần đảm bảo số lượng tối thiểu để đủ mang tính đại diện. Chi tiết về điều kiện số lượng nhân viên cần tham gia, vui lòng xem “Điều kiện tham gia Chương trình chứng nhận”.​</p>
@@ -192,7 +228,7 @@
                     </div>
                     <div class="card">
                         <div class="card-header" role="tab" id="headingSix">
-                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse6_31" aria-expanded="false" aria-controls="collapse6">
+                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse6_32" aria-expanded="false" aria-controls="collapse6">
                                 <div class="panel-wrap">
                                     <p class="panel-number mbr-fonts-style display-4">
                                         06</p>
@@ -201,7 +237,7 @@
                                 <div class="icon-wrapper"><span class="sign mbr-iconfont mobi-mbri-plus mobi-mbri mbri-arrow-down"></span></div>
                             </a>
                         </div>
-                        <div id="collapse6_31" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingSix" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_31">
+                        <div id="collapse6_32" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingSix" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_32">
                             <div class="panel-body">
                                 <div class="panel-padding"></div>
                                 <p class="mbr-fonts-style panel-text display-4">Cả 2 khảo sát đều sẽ thực hiện online, Anphabe sẽ gửi đường liên kết khảo sát để phía công ty tham gia thực hiện. Với khảo sát Nhân Sự / Lãnh Đạo, chuyên gia từ Anphabe có thể xin hẹn phỏng vấn thêm 45-60’ để hiểu kỹ thêm các chiến lược &amp; thực hành nếu cần thêm cơ sở đánh giá.​</p>
@@ -210,7 +246,7 @@
                     </div>
                     <div class="card">
                         <div class="card-header" role="tab" id="headingSeven">
-                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse7_31" aria-expanded="false" aria-controls="collapse7">
+                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse7_32" aria-expanded="false" aria-controls="collapse7">
                                 <div class="panel-wrap">
                                     <p class="panel-number mbr-fonts-style display-4">
                                         07</p>
@@ -219,7 +255,7 @@
                                 <div class="icon-wrapper"><span class="sign mbr-iconfont mobi-mbri-plus mobi-mbri mbri-arrow-down"></span></div>
                             </a>
                         </div>
-                        <div id="collapse7_31" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingSevene" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_31">
+                        <div id="collapse7_32" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingSevene" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_32">
                             <div class="panel-body">
                                 <div class="panel-padding"></div>
                                 <ul class="list mbr-fonts-style panel-text display-4">
@@ -232,7 +268,7 @@
                     </div>
                     <div class="card">
                         <div class="card-header" role="tab" id="headingEight">
-                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse8_31" aria-expanded="false" aria-controls="collapse8">
+                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse8_32" aria-expanded="false" aria-controls="collapse8">
                                 <div class="panel-wrap">
                                     <p class="panel-number mbr-fonts-style display-4">
                                         08</p>
@@ -241,7 +277,7 @@
                                 <div class="icon-wrapper"><span class="sign mbr-iconfont mobi-mbri-plus mobi-mbri mbri-arrow-down"></span></div>
                             </a>
                         </div>
-                        <div id="collapse8_31" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingEight" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_31">
+                        <div id="collapse8_32" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingEight" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_32">
                             <div class="panel-body">
                                 <div class="panel-padding"></div>
                                 <p class="mbr-fonts-style panel-text display-4">Kết quả khảo sát của công ty nào chỉ được chia sẻ duy nhất cho công ty đó. Tuy nhiên, Anphabe vẫn sẽ cung cấp các chỉ số trung bình của thị trường để mỗi công ty có thể so sánh với tiêu chuẩn chung.​</p>
@@ -250,7 +286,7 @@
                     </div>
                     <div class="card">
                         <div class="card-header" role="tab" id="headingNine">
-                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse9_31" aria-expanded="false" aria-controls="collapse9">
+                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse9_32" aria-expanded="false" aria-controls="collapse9">
                                 <div class="panel-wrap">
                                     <p class="panel-number mbr-fonts-style display-4">
                                         09</p>
@@ -259,7 +295,7 @@
                                 <div class="icon-wrapper"><span class="sign mbr-iconfont mobi-mbri-plus mobi-mbri mbri-arrow-down"></span></div>
                             </a>
                         </div>
-                        <div id="collapse9_31" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingNine" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_31">
+                        <div id="collapse9_32" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingNine" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_32">
                             <div class="panel-body">
                                 <div class="panel-padding"></div>
                                 <ul class="list mbr-fonts-style panel-text display-4">
@@ -275,7 +311,7 @@
     </div>
 </section>
 
-<section data-bs-version="5.1" class="form1 cid-u6FPMsFKNs mbr-fullscreen" id="form1-24" data-rv-view="392">
+<section data-bs-version="5.1" class="form1 cid-u6FPMsFKNs mbr-fullscreen" id="form1-24" data-rv-view="441">
 
     
 
@@ -438,8 +474,8 @@ Email:&nbsp;<a href="mailto:clientsolution@anphabe.com" class="text-success">cli
             
         </div>
     </div>
-</section><section><a href="https://mobiri.se"></a><a href="https://mobiri.se"></a></section><script src="assets/witsec-jquery-3.5.1/jquery-3.5.1.min.js"></script>  <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/mbr-switch-arrow/mbr-switch-arrow.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/theme/js/script.js"></script>  
-  
+</section><section><a href="https://mobiri.se"></a><a href="https://mobiri.se"></a></section><script src="assets/witsec-jquery-3.5.1/jquery-3.5.1.min.js"></script>  <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/mbr-switch-arrow/mbr-switch-arrow.js"></script>  <script src="assets/theme/js/script.js"></script>  
+  <script src="https://www.anphabe.com/sites/all/modules/mio/sales_lead/js/sales_lead.js"></script>
   
 </body>
 </html>
