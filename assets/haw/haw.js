@@ -143,51 +143,9 @@
     function rankingDisplayByJson2HTML(data) {
         $('.loading-data').hide();
 
+        data.sort(function(a,b) {return a.sortname.localeCompare(b.sortname);});
+        $("#vnbptw-ranking").empty().json2html({'companies':data}, template.grid);
 
-
-        // if 2023
-        
-        let industry = $('#select_industry').val();
-        
-
-        console.log("debug", data, industry);
-        if($('#select_year').val() == 2023) {
-
-            if( ($('#award').val() == 'top100'  || $('#award').val() == 'top100sme' ) && !industry) {
-
-                $('.vnbptw-ranking-top').show();
-                $('.vnbptw-ranking-industry').hide();
-
-                let top1 = data.slice(0,1);
-                let top10 = data.slice(1,10);
-                let top20 = data.slice(10,20);
-                let top50 = data.slice(20,50);
-                let top100 = data.slice(50);
-        
-                top1[0].logo_link = top1[0].logo_link.replace('rectMedium','rectLarge');
-        
-                top10.sort(function(a,b) {return a.sortname.localeCompare(b.sortname);});
-                top20.sort(function(a,b) {return a.sortname.localeCompare(b.sortname);});
-                top50.sort(function(a,b) {return a.sortname.localeCompare(b.sortname);});
-                top100.sort(function(a,b) {return a.sortname.localeCompare(b.sortname);});
-            // console.log(top10, a);
-                
-                $("#vnbptw-ranking-top1").empty().json2html({'companies':top1}, template.grid);
-                $("#vnbptw-ranking-top10").empty().json2html({'companies':top10}, template.grid);
-                $("#vnbptw-ranking-top20").empty().json2html({'companies':top20}, template.grid);
-                $("#vnbptw-ranking-top50").empty().json2html({'companies':top50}, template.grid);
-                $("#vnbptw-ranking-top100").empty().json2html({'companies':top100}, template.grid);
-            }
-            else {
-                $('.vnbptw-ranking-top').hide();
-                $('.vnbptw-ranking-industry').show();
-               // data.sort(function(a,b) {return a.ranking.localeCompare(b.ranking,'en');});
-                $("#vnbptw-ranking").empty().json2html({'companies':data}, template.grid);
-            }
-        }
-        else {
-            $("#vnbptw-ranking").empty().json2html({'companies':data}, template.grid);
-        }
 
         $("#ranking-filter").on("keyup", function () {
             let value = remove_vn_character($(this).val().toLowerCase());
@@ -240,7 +198,7 @@
         });
 
         $('#select_year').change(function () {
-            let page = 'top-100-noi-lam-viec-tot-nhat-viet-nam-' + $('#select_year').val() + '.html';
+            let page = 'chung-nhan-' + $('#select_year').val() + '.html';
             window.location.href = page;
         });
     });
