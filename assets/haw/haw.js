@@ -191,16 +191,18 @@
     }
 
     $(document).ready(function () {
-        getData(getDataURL());
-
-        $("#select_industry").change(function () {
+        if($("#award").length > 0 && $("#select_year").length > 0) {
             getData(getDataURL());
-        });
 
-        $('#select_year').change(function () {
-            let page = 'chung-nhan-' + $('#select_year').val() + '.html';
-            window.location.href = page;
-        });
+            $("#select_industry").change(function () {
+                getData(getDataURL());
+            });
+
+            $('#select_year').change(function () {
+                let page = 'chung-nhan-' + $('#select_year').val() + '.html';
+                window.location.href = page;
+            });
+        }
     });
 
     function remove_vn_character(input) {
