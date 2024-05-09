@@ -105,10 +105,10 @@
         "main": true,
         "title": "Chứng nhận Nguồn Nhân Lực Hạnh Phúc - Happiness At Work Certification",
         "meta_descr": "Chương trình Chứng nhận Nguồn Nhân Lực Hạnh Phúc sẽ tiến hành khảo sát doanh nghiệp toàn diện, từ khảo sát nhân viên đến các chia sẻ từ Lãnh Đạo. Chỉ khi các minh chứng thực tế và dữ liệu khảo sát đáp ứng được mức chuẩn của chương trình, doanh nghiệp sẽ được Ban Tổ Chức cấp Chứng nhận Doanh nghiệp tiêu biểu có Nguồn Nhân Lực Hạnh Phúc.",
-        "header_custom": "",
+        "header_custom": "<meta property=\"og:site_name\" content=\"happinessatwork.vn/\"/>\n<meta property=\"og:rich_attachment\" content=\"true\"/>\n<meta property=\"og:type\" content=\"website\"/>\n<meta name=\"image\" property=\"og:image\" content=\"https://happinessatwork.vn/assets/images/happinessatwork.jpg\">\n<meta property=\"og:url\" itemprop=\"url\" content=\"https://happinessatwork.vn/\"/>\n<meta name=\"twitter:image:src\" content=\"https://happinessatwork.vn/assets/images/happinessatwork.jpg\">\n<meta name=\"description\" property=\"og:description\" content=\"Chương trình Chứng chận Nguồn Nhân Lực Hạnh Phúc tiến hành khảo sát doanh nghiệp toàn diện, kết hợp đo lường chỉ số Hạnh Phúc của nhân viên, đánh giá của họ về các yếu tố môi trường làm việc cũng như chia sẻ từ Nhân Sự về chiến lược & thực hành thúc đẩy mức Hạnh Phúc của người đi làm.\">\n<meta name=\"author\" content=\"Anphabe\">",
         "footer_custom": "",
         "html_before": "",
-        "meta_image": "@PROJECT_PATH@/assets/images/logo%20haw%20(khong%20nam)-397x241.jpg"
+        "socialSharingUrl": ""
       },
       "components": [
         {
@@ -1699,7 +1699,7 @@
       "settings": {
         "title": "Phương pháp & Mô hình",
         "meta_descr": "",
-        "header_custom": "",
+        "header_custom": "<meta property=\"og:site_name\" content=\"happinessatwork.vn/\"/>\n<meta property=\"og:rich_attachment\" content=\"true\"/>\n<meta property=\"og:type\" content=\"website\"/>\n<meta name=\"image\" property=\"og:image\" content=\"https://happinessatwork.vn/assets/images/happinessatwork.jpg\">\n<meta property=\"og:url\" itemprop=\"url\" content=\"https://happinessatwork.vn/\"/>\n<meta name=\"twitter:image:src\" content=\"https://happinessatwork.vn/assets/images/happinessatwork.jpg\">\n<meta name=\"description\" property=\"og:description\" content=\"Chương trình Chứng chận Nguồn Nhân Lực Hạnh Phúc tiến hành khảo sát doanh nghiệp toàn diện, kết hợp đo lường chỉ số Hạnh Phúc của nhân viên, đánh giá của họ về các yếu tố môi trường làm việc cũng như chia sẻ từ Nhân Sự về chiến lược & thực hành thúc đẩy mức Hạnh Phúc của người đi làm.\">\n<meta name=\"author\" content=\"Anphabe\">",
         "footer_custom": "",
         "html_before": "",
         "order": "5"
@@ -3578,7 +3578,7 @@
       "settings": {
         "title": "Liên hệ",
         "meta_descr": "",
-        "header_custom": "",
+        "header_custom": "<meta property=\"og:site_name\" content=\"happinessatwork.vn/\"/>\n<meta property=\"og:rich_attachment\" content=\"true\"/>\n<meta property=\"og:type\" content=\"website\"/>\n<meta name=\"image\" property=\"og:image\" content=\"https://happinessatwork.vn/assets/images/happinessatwork.jpg\">\n<meta property=\"og:url\" itemprop=\"url\" content=\"https://happinessatwork.vn/\"/>\n<meta name=\"twitter:image:src\" content=\"https://happinessatwork.vn/assets/images/happinessatwork.jpg\">\n<meta name=\"description\" property=\"og:description\" content=\"Chương trình Chứng chận Nguồn Nhân Lực Hạnh Phúc tiến hành khảo sát doanh nghiệp toàn diện, kết hợp đo lường chỉ số Hạnh Phúc của nhân viên, đánh giá của họ về các yếu tố môi trường làm việc cũng như chia sẻ từ Nhân Sự về chiến lược & thực hành thúc đẩy mức Hạnh Phúc của người đi làm.\">\n<meta name=\"author\" content=\"Anphabe\">",
         "footer_custom": "",
         "html_before": "",
         "order": "7"
@@ -4445,7 +4445,7 @@
       "settings": {
         "title": "Cám ơn bạn đã gửi thông tin!",
         "meta_descr": "Cám ơn bạn đã gửi thông tin!",
-        "header_custom": "",
+        "header_custom": "<meta property=\"og:site_name\" content=\"happinessatwork.vn/\"/>\n<meta property=\"og:rich_attachment\" content=\"true\"/>\n<meta property=\"og:type\" content=\"website\"/>\n<meta name=\"image\" property=\"og:image\" content=\"https://happinessatwork.vn/assets/images/happinessatwork.jpg\">\n<meta property=\"og:url\" itemprop=\"url\" content=\"https://happinessatwork.vn/\"/>\n<meta name=\"twitter:image:src\" content=\"https://happinessatwork.vn/assets/images/happinessatwork.jpg\">\n<meta name=\"description\" property=\"og:description\" content=\"Chương trình Chứng chận Nguồn Nhân Lực Hạnh Phúc tiến hành khảo sát doanh nghiệp toàn diện, kết hợp đo lường chỉ số Hạnh Phúc của nhân viên, đánh giá của họ về các yếu tố môi trường làm việc cũng như chia sẻ từ Nhân Sự về chiến lược & thực hành thúc đẩy mức Hạnh Phúc của người đi làm.\">\n<meta name=\"author\" content=\"Anphabe\">",
         "footer_custom": "",
         "html_before": "",
         "order": "1"
@@ -5235,7 +5235,7 @@
       "settings": {
         "title": "Góc báo chí",
         "meta_descr": "",
-        "header_custom": "",
+        "header_custom": "<meta property=\"og:site_name\" content=\"happinessatwork.vn/\"/>\n<meta property=\"og:rich_attachment\" content=\"true\"/>\n<meta property=\"og:type\" content=\"website\"/>\n<meta name=\"image\" property=\"og:image\" content=\"https://happinessatwork.vn/assets/images/happinessatwork.jpg\">\n<meta property=\"og:url\" itemprop=\"url\" content=\"https://happinessatwork.vn/\"/>\n<meta name=\"twitter:image:src\" content=\"https://happinessatwork.vn/assets/images/happinessatwork.jpg\">\n<meta name=\"description\" property=\"og:description\" content=\"Chương trình Chứng chận Nguồn Nhân Lực Hạnh Phúc tiến hành khảo sát doanh nghiệp toàn diện, kết hợp đo lường chỉ số Hạnh Phúc của nhân viên, đánh giá của họ về các yếu tố môi trường làm việc cũng như chia sẻ từ Nhân Sự về chiến lược & thực hành thúc đẩy mức Hạnh Phúc của người đi làm.\">\n<meta name=\"author\" content=\"Anphabe\">",
         "footer_custom": "",
         "html_before": "",
         "order": "6"
@@ -6266,7 +6266,7 @@
         "title": "Doanh nghiệp tiêu biểu có Nguồn Nhân Lực Hạnh Phúc 2023",
         "order": "2",
         "meta_descr": "Doanh nghiệp tiêu biểu có Nguồn Nhân Lực Hạnh Phúc 2023",
-        "header_custom": "",
+        "header_custom": "<meta property=\"og:site_name\" content=\"happinessatwork.vn/\"/>\n<meta property=\"og:rich_attachment\" content=\"true\"/>\n<meta property=\"og:type\" content=\"website\"/>\n<meta name=\"image\" property=\"og:image\" content=\"https://happinessatwork.vn/assets/images/happinessatwork.jpg\">\n<meta property=\"og:url\" itemprop=\"url\" content=\"https://happinessatwork.vn/\"/>\n<meta name=\"twitter:image:src\" content=\"https://happinessatwork.vn/assets/images/happinessatwork.jpg\">\n<meta name=\"description\" property=\"og:description\" content=\"Chương trình Chứng chận Nguồn Nhân Lực Hạnh Phúc tiến hành khảo sát doanh nghiệp toàn diện, kết hợp đo lường chỉ số Hạnh Phúc của nhân viên, đánh giá của họ về các yếu tố môi trường làm việc cũng như chia sẻ từ Nhân Sự về chiến lược & thực hành thúc đẩy mức Hạnh Phúc của người đi làm.\">\n<meta name=\"author\" content=\"Anphabe\">",
         "footer_custom": "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/json2html/2.2.2/json2html.min.js\"></script>\n<script src=\"assets/haw/haw.js\"></script>",
         "html_before": "",
         "socialSharingUrl": "https://happinessatwork.vn/assets/images/haw-2023-700.jpg"
@@ -7071,7 +7071,7 @@
         "title": "Doanh nghiệp tiêu biểu có Nguồn Nhân Lực Hạnh Phúc 2022",
         "order": "3",
         "meta_descr": "Doanh nghiệp tiêu biểu có Nguồn Nhân Lực Hạnh Phúc 2022",
-        "header_custom": "",
+        "header_custom": "<meta property=\"og:site_name\" content=\"happinessatwork.vn/\"/>\n<meta property=\"og:rich_attachment\" content=\"true\"/>\n<meta property=\"og:type\" content=\"website\"/>\n<meta name=\"image\" property=\"og:image\" content=\"https://happinessatwork.vn/assets/images/happinessatwork.jpg\">\n<meta property=\"og:url\" itemprop=\"url\" content=\"https://happinessatwork.vn/\"/>\n<meta name=\"twitter:image:src\" content=\"https://happinessatwork.vn/assets/images/happinessatwork.jpg\">\n<meta name=\"description\" property=\"og:description\" content=\"Chương trình Chứng chận Nguồn Nhân Lực Hạnh Phúc tiến hành khảo sát doanh nghiệp toàn diện, kết hợp đo lường chỉ số Hạnh Phúc của nhân viên, đánh giá của họ về các yếu tố môi trường làm việc cũng như chia sẻ từ Nhân Sự về chiến lược & thực hành thúc đẩy mức Hạnh Phúc của người đi làm.\">\n<meta name=\"author\" content=\"Anphabe\">",
         "footer_custom": "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/json2html/2.2.2/json2html.min.js\"></script>\n<script src=\"assets/haw/haw.js\"></script>",
         "html_before": "",
         "socialSharingUrl": "https://happinessatwork.vn/assets/images/haw-2023-700.jpg"
@@ -7876,7 +7876,7 @@
         "title": "Doanh nghiệp tiêu biểu có Nguồn Nhân Lực Hạnh Phúc 2021",
         "order": "4",
         "meta_descr": "Doanh nghiệp tiêu biểu có Nguồn Nhân Lực Hạnh Phúc 2021",
-        "header_custom": "",
+        "header_custom": "<meta property=\"og:site_name\" content=\"happinessatwork.vn/\"/>\n<meta property=\"og:rich_attachment\" content=\"true\"/>\n<meta property=\"og:type\" content=\"website\"/>\n<meta name=\"image\" property=\"og:image\" content=\"https://happinessatwork.vn/assets/images/happinessatwork.jpg\">\n<meta property=\"og:url\" itemprop=\"url\" content=\"https://happinessatwork.vn/\"/>\n<meta name=\"twitter:image:src\" content=\"https://happinessatwork.vn/assets/images/happinessatwork.jpg\">\n<meta name=\"description\" property=\"og:description\" content=\"Chương trình Chứng chận Nguồn Nhân Lực Hạnh Phúc tiến hành khảo sát doanh nghiệp toàn diện, kết hợp đo lường chỉ số Hạnh Phúc của nhân viên, đánh giá của họ về các yếu tố môi trường làm việc cũng như chia sẻ từ Nhân Sự về chiến lược & thực hành thúc đẩy mức Hạnh Phúc của người đi làm.\">\n<meta name=\"author\" content=\"Anphabe\">",
         "footer_custom": "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/json2html/2.2.2/json2html.min.js\"></script>\n<script src=\"assets/haw/haw.js\"></script>",
         "html_before": "",
         "socialSharingUrl": "https://happinessatwork.vn/assets/images/haw-2023-700.jpg"
