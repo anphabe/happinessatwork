@@ -645,7 +645,7 @@
               "padding-top": "(@paddingTop * 1rem)",
               "padding-bottom": "(@paddingBottom * 1rem)"
             },
-            "min-height": "80vh !important",
+            "min-height": "100vh !important",
             "& when (@bg-type = 'image')": {
               "background-image": "url(@bg-value)",
               "@media (max-width: 768px)": {
