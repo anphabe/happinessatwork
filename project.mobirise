@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Happiness At Work Certification",
-    "currentPage": "phuong-phap.html",
+    "currentPage": "index.html",
     "theme": {
       "name": "mobirise5",
       "title": "Mobirise 5",
@@ -14,7 +14,7 @@
         "dangerColor": "#f55f1d",
         "mainFont": "Jost",
         "display1Font": "Questrial",
-        "display1Size": "3.4",
+        "display1Size": "3",
         "display2Font": "Questrial",
         "display2Size": "2.6",
         "display5Font": "Mulish",
@@ -79,7 +79,7 @@
       }
     ],
     "uniqCompNum": 248,
-    "versionPublish": "5.9.0",
+    "versionPublish": "5.9.17",
     "imageResize": false,
     "screenshot": "screenshot.png",
     "witsec-jquery": "3.5.1",
