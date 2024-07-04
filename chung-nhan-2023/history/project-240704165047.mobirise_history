@@ -5308,7 +5308,7 @@
               }
             },
             ".image-wrapper": {
-              "border": "10px solid white"
+              "border": "1px solid black"
             },
             ".mbr-text, .social-row": {
               "color": "#232323"

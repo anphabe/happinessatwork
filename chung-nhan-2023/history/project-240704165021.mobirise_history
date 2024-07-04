@@ -5307,9 +5307,6 @@
                 "height": "50px"
               }
             },
-            ".image-wrapper": {
-              "border": "10px solid white"
-            },
             ".mbr-text, .social-row": {
               "color": "#232323"
             },
