@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Happiness At Work Certification",
-    "currentPage": "mm-mega-market.html",
+    "currentPage": "mm-mega-market-basic.html",
     "theme": {
       "name": "mobirise5",
       "title": "Mobirise 5",
@@ -30,13 +30,13 @@
         "isScrollToTopButton": false
       },
       "additionalSetColors": [
+        "#9d9b9b",
         "#f1f8ff",
         "#f8f2eb",
         "#f5f5f5",
         "#ffc000",
         "#004a77",
-        "#fff600",
-        "#f0f3f9"
+        "#fff600"
       ]
     },
     "path": "@PROJECT_PATH@",
@@ -78,8 +78,8 @@
         "url": "https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
       }
     ],
-    "uniqCompNum": 322,
-    "versionPublish": "5.9.0",
+    "uniqCompNum": 329,
+    "versionPublish": "5.9.17",
     "imageResize": false,
     "screenshot": "screenshot.png",
     "witsec-jquery": "3.5.1",
@@ -6982,63 +6982,6 @@
               "padding-top": "(@paddingTop * 1rem)",
               "padding-bottom": "(@paddingBottom * 1rem)"
             },
-            "min-height": "46vh!important",
-            "@media (min-width: 1500px)": {
-              ".container": {
-                "max-width": "1400px"
-              }
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            ".mbr-fallback-image.disabled": {
-              "display": "none"
-            },
-            ".mbr-fallback-image": {
-              "display": "block",
-              "background-size": "cover",
-              "background-position": "center center",
-              "width": "100%",
-              "height": "100%",
-              "position": "absolute",
-              "top": "0",
-              "& when (@bg-type = 'video')": {
-                "background-image": "url(@fallBackImage)"
-              }
-            },
-            ".mbr-section-title": {
-              "color": "#ffffff",
-              "text-align": "left"
-            },
-            "@media (max-width: 768px)": {
-              "padding-top": "2rem",
-              "padding-bottom": "0",
-              "min-height": "32vh!important"
-            }
-          },
-          "_name": "info1",
-          "_sourceTheme": "mobirise5",
-          "_customHTML": "<section data-bs-version=\"5.1\" group=\"Features\" class=\"info1\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"10\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/bg-result.jpg\" selected>\n            <input type=\"color\" title=\"Color\" value=\"#4479d9\">\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n    <div class=\"align-center\" mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-center\">\n            <div class=\"col-12 col-lg-8\">\n                <h3 class=\"mbr-section-title mb-4 mbr-fonts-style\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\"><b>Doanh nghiệp tiêu biểu có Nguồn Nhân Lực Hạnh Phúc 2024 (Basic)</b></h3>\n                <p class=\"mbr-text mb-5 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                    Mobirise is a free offline app for Windows and Mac to easily create small/medium websites, landing pages, online resumes and portfolios. 3100+ beautiful website blocks, templates and themes help you to start easily.\n                </p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n                    <a class=\"btn btn-white\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Visit Forums</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_JSplaceholders": [],
-          "_PHPplaceholders": [],
-          "_isUserblock": true,
-          "_cid": "uhygCR8tPD",
-          "_anchor": "info1-8a",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "& when not (@fullScreen)": {
-              "padding-top": "(@paddingTop * 1rem)",
-              "padding-bottom": "(@paddingBottom * 1rem)"
-            },
             "& when (@bg-type = 'color')": {
               "background-color": "@bg-value"
             },
@@ -7070,52 +7013,26 @@
                 "margin-bottom": "1rem"
               }
             },
+            ".row": {
+              "flex-direction": "row-reverse"
+            },
             "img": {
-              "width": "100%"
+              "width": "100%",
+              "border": "1px solid #c8c8c8",
+              "padding": "1rem"
             },
-            "@media (min-width: 992px)": {
-              ".text-wrapper": {
-                "padding": "1rem"
-              },
-              ".dp-f": {
-                "display": "flex"
-              }
-            },
-            ".pr-1": {
-              "padding-right": "0.5rem"
-            },
-            "@media (max-width: 992px)": {
-              ".logo-winner": {
-                "width": "50%"
-              }
-            },
-            "@media (max-width: 768px)": {
-              ".logo-winner": {
-                "width": "70%!important"
-              }
-            },
-            ".mbr-description": {
-              "text-align": "center"
-            },
-            ".mbr-section-title": {
-              "color": "#232323"
-            },
-            ".frame-winner": {
-              "background": "#ffc000",
-              "border-radius": "10px"
-            },
-            ".logo-winner": {
-              "margin-top": "1rem",
-              "border-radius": "10px"
+            ".display-1": {
+              "font-size": "3rem!important",
+              "line-height": "1.3"
             }
           },
-          "_name": "image1",
+          "_name": "image2",
           "_sourceTheme": "mobirise5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image1\" group=\"Images & Videos\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"2\" condition=\"fullScreen == false\">\n        <input type=\"range\" name=\"textWidth\" title=\"Image\" min=\"4\" max=\"8\" step=\"1\" value=\"6\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Description\" name=\"showDescription\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth}\">\n        <div class=\"row align-items-start\">\n            <div class=\"col-12 col-lg-4 mt-4 frame-winner\">\n                  <div class=\"image-wrapper\">\n                      <div class=\"d-flex justify-content-center\">\n                        <img class=\"logo-winner\" src=\"@PROJECT_PATH@/assets/images/mmmegamarket-bg.png\" alt=\"MM Mega Market\">\n                      </div>\n                      <p style=\"color:white\" class=\"mbr-description mbr-fonts-style pt-2 d-flex justify-content-center\" mbr-theme-style=\"display-7\" mbr-if=\"showDescription\" data-app-selector=\".mbr-description\"><b style>CÔNG TY TNHH MM Mega Market Việt Nam</b></p>\n                  </div>\n            </div>\n            <div class=\"col-12 col-lg-8\">\n                <div class=\"text-wrapper\">\n                    <h3 class=\"mbr-section-title mbr-fonts-style mb-3 mt-3\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\"><b>Giới thiệu công ty</b></h3>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n                        Thành lập năm 2002, MM Mega Market Việt Nam là nhà tiên phong mô hình Trung tâm Bán sỉ Hiện đại, cung cấp nguồn cung đa dạng, đảm bảo chất lượng cho hàng trăm ngàn khách hàng chuyên nghiệp trên toàn quốc.<br><br>Với hơn 21 Trung tâm Bán sỉ &amp; Siêu thị, MM Mega Market cam kết Giải pháp Phù hợp, đáp ứng mọi nhu cầu với đa dạng sản phẩm chất lượng cao, giá cả cạnh tranh. Hơn thế nữa, doanh nghiệp còn tích cực hỗ trợ cộng đồng và địa phương, góp phần vào sự phát triển chung.<br></p>\n                </div>\n                <!--<div class=\"text-wrapper dp-f\">\n                      <div class=\"item features-without-image mb-4 col-12 col-md-6\">\n                          <div class=\"item-wrapper\">\n                              <div class=\"card-box\">\n                                  <h4 class=\"card-title mbr-fonts-style mb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><b>QUY MÔ</b></h4>\n                                  <h5 class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".card-text\">Small (30 to 99 employees)</h5>\n                              </div>\n                          </div>\n                      </div>\n                      <div class=\"item features-without-image mb-4 col-12 col-md-6\">\n                          <div class=\"item-wrapper\">\n                              <div class=\"card-box\">\n                                  <h4 class=\"card-title mbr-fonts-style mb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><b>NGÀNH</b></h4>\n                                  <h5 class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".card-text\">Information Technology</h5>\n                              </div>\n                          </div>\n                      </div>\n                      \n                </div>\n                <div class=\"item features-without-image mb-2 text-wrapper\">\n                          <div class=\"item-wrapper\">\n                              <div class=\"card-box\">\n                                  <h4 class=\"card-title mbr-fonts-style mb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                                      <b>Tìm hiểu thêm về AEON Việt Nam</b>\n                                  </h4>\n                                  <div>                         \n                                    <a class=\"pr-1\" href=\"https://facebook.com\">\n                                      <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" fill=\"#1778f2\" class=\"bi bi-facebook\" viewBox=\"0 0 16 16\">\n                                        <path d=\"M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951\"></path>\n                                      </svg>\n                                    </a>\n                                    <a class=\"pr-1\" href>\n                                      <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" fill=\"currentColor\" class=\"bi bi-linkedin\" viewBox=\"0 0 16 16\">\n                                        <path d=\"M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z\"></path>\n                                      </svg>\n                                    </a>\n                                    <a href>\n                                      <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" fill=\"#f00075\" class=\"bi bi-instagram\" viewBox=\"0 0 16 16\">\n                                        <path d=\"M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334\"></path>\n                                      </svg>\n                                    </a>\n                                  </div>\n                              </div>\n                          </div>\n                      </div>-->\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image2\" group=\"Images & Videos\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"3\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"1\" condition=\"fullScreen == false\">\n        <input type=\"range\" name=\"textWidth\" title=\"Image\" min=\"4\" max=\"8\" step=\"1\" value=\"4\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Description\" name=\"showDescription\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth}\">\n        <div class=\"row align-items-center\">\n            <div class=\"col-12 col-lg-{{textWidth}}\">\n                <div class=\"image-wrapper\">\n                    <img src=\"@PROJECT_PATH@/assets/images/mmmegamarket-bg.png\" alt=\"Mobirise Website Builder\">\n                </div>\n            </div>\n            <div class=\"col-12\" mbr-class=\"{'col-lg' : !fullWidth, 'col-lg-4' : fullWidth &amp;&amp; textWidth >= 6, 'col-lg-6' : fullWidth &amp;&amp; textWidth <= 5}\">\n                <div class=\"text-wrapper\">\n                    <h3 class=\"mbr-section-title mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">\n                    <b>Công ty TNDD Mega Market Việt Nam</b></h3>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n                    Use Mobirise website building software to create multiple sites for commercial and non-profit projects. Click on the image in this block to replace it. You can add a description below your image, or on the side. If you want to hide some of the text fields, open the Block parameters, and uncheck relevant options.</p>\n                </div>\n            </div>\n            \n        </div>\n    </div>\n</section>",
+          "_cid": "uhVpGNkRWS",
+          "_anchor": "image2-8y",
           "_PHPplaceholders": [],
           "_JSplaceholders": [],
-          "_cid": "uhygCS683Y",
-          "_anchor": "image1-8b",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
@@ -7162,7 +7079,7 @@
               "padding-right": ".5rem"
             },
             ".card-title": {
-              "color": "#232323"
+              "color": "#9d9b9b"
             },
             "@media (min-width: 992px)": {
               ".item": {
@@ -7172,68 +7089,12 @@
           },
           "_name": "features15",
           "_sourceTheme": "mobirise5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"features15\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"0\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Icons\" name=\"showIcon\" checked>\n        <input type=\"color\" title=\"Color\" name=\"iconColor\" value=\"#6592e6\" selected condition=\"showIcon\">\n        <select title=\"Columns\" name=\"columns\">\n            <option value=\"3\">4</option>\n            <option value=\"4\" selected>3</option>\n            <option value=\"6\">2</option>\n            <option value=\"12\">1</option>\n        </select>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"item features-without-image col-12 col-md-{{columns}}\">\n                <div class=\"item-wrapper\">\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title mbr-fonts-style mb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><b>Quy mô</b></h4>\n                        <h5 class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".card-text\">1.000 - 4.999 người</h5>\n                    </div>\n                </div>\n            </div>\n            <div class=\"item features-without-image col-12 col-md-{{columns}}\">\n                <div class=\"item-wrapper\">\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title mbr-fonts-style mb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><b>Ngành</b></h4>\n                        <h5 class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".card-text\">Bán lẻ / Bán sỉ / Thương mại</h5>\n                    </div>\n                </div>\n            </div>\n            <div class=\"item features-without-image col-12 col-md-{{columns}}\">\n                <div class=\"item-wrapper\">\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title mbr-fonts-style mb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            <b>Tìm hiểu thêm về công ty</b></h4>\n                        <div>\n                          <a class=\"pr-1\" href=\"https://mmvietnam.com/\" target=\"_blank\">\n                            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" fill=\"#146ebe\" viewBox=\"0 0 512 512\"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d=\"M352 256c0 22.2-1.2 43.6-3.3 64H163.3c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64H348.7c2.2 20.4 3.3 41.8 3.3 64zm28.8-64H503.9c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6c78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7c10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5c11.6 26 20.9 58.2 27 94.7zm-209 0H18.6C48.6 85.9 112.2 29.1 190.6 8.4C165.1 42.6 145.3 96.1 135.3 160zM8.1 192H131.2c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zM194.7 446.6c-11.6-26-20.9-58.2-27-94.6H344.3c-6.1 36.4-15.5 68.6-27 94.6c-10.5 23.6-22.2 40.7-33.5 51.5C272.6 508.8 263.3 512 256 512s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6C112.2 482.9 48.6 426.1 18.6 352H135.3zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6c25.5-34.2 45.2-87.7 55.3-151.6H493.4z\"></path></svg>\n                          </a> \n                          <a class=\"pr-1\" href=\"https://www.linkedin.com/company/mm-mega-market-vietnam/\" target=\"_blank\">\n                            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" fill=\"currentColor\" class=\"bi bi-linkedin\" viewBox=\"0 0 16 16\">\n                              <path d=\"M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z\"></path>\n                            </svg>\n                          </a>                        \n                          <a class=\"pr-1\" href=\"https://www.facebook.com/MMMegaMarketVietnam\" target=\"_blank\">\n                            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" fill=\"#1778f2\" class=\"bi bi-facebook\" viewBox=\"0 0 16 16\">\n                              <path d=\"M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951\"></path>\n                            </svg>\n                          </a>\n                          \n                          <a class=\"pr-1\" href=\"https://www.instagram.com/mmmegamarketvietnam/\" target=\"_blank\">\n                            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" fill=\"#f00075\" class=\"bi bi-instagram\" viewBox=\"0 0 16 16\">\n                              <path d=\"M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334\"></path>\n                            </svg>\n                          </a>\n                          <a class=\"pr-1\" href=\"https://www.youtube.com/c/MMMegaMarketVietnam\" target=\"_blank\">\n                            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" fill=\"#dc3545\" class=\"bi bi-youtube\" viewBox=\"0 0 16 16\">\n                              <path d=\"M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z\"></path>\n                            </svg>\n                          </a>\n                          <a class=\"pr-1\" href=\"https://www.tiktok.com/@mmmegamarketvietnam\" target=\"_blank\">\n                            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 512 512\"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->\n                            <path fill=\"#000000\" d=\"M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z\"></path></svg>\n                          </a>\n                        </div>\n                        \n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"features15\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"0\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Icons\" name=\"showIcon\" checked>\n        <input type=\"color\" title=\"Color\" name=\"iconColor\" value=\"#6592e6\" selected condition=\"showIcon\">\n        <select title=\"Columns\" name=\"columns\">\n            <option value=\"3\">4</option>\n            <option value=\"4\" selected>3</option>\n            <option value=\"6\">2</option>\n            <option value=\"12\">1</option>\n        </select>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <hr>\n        <div class=\"row justify-content-center\">\n            <div class=\"item features-without-image col-12 col-lg-4\">\n                <div class=\"item-wrapper\">\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title mbr-fonts-style mb-2\" mbr-theme-style=\"display-4\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><b>QUY MÔ</b></h4>\n                        <h5 class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".card-text\">1.000 - 4.999 người</h5>\n                    </div>\n                </div>\n            </div>\n            <div class=\"item features-without-image col-12 col-lg-4\">\n                <div class=\"item-wrapper\">\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title mbr-fonts-style mb-2\" mbr-theme-style=\"display-4\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><b>NGÀNH</b></h4>\n                        <h5 class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".card-text\">Bán lẻ / Bán sỉ / Thương mại</h5>\n                    </div>\n                </div>\n            </div>\n            <div class=\"item features-without-image col-12 col-lg-4\">\n                <div class=\"item-wrapper\">\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title mbr-fonts-style mb-2\" mbr-theme-style=\"display-4\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            <b>TÌM HIỂU THÊM VỀ CÔNG TY</b></h4>\n                        <div>\n                          <a class=\"pr-1\" href=\"https://mmvietnam.com/\" target=\"_blank\">\n                            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" fill=\"#146ebe\" viewBox=\"0 0 512 512\"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d=\"M352 256c0 22.2-1.2 43.6-3.3 64H163.3c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64H348.7c2.2 20.4 3.3 41.8 3.3 64zm28.8-64H503.9c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6c78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7c10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5c11.6 26 20.9 58.2 27 94.7zm-209 0H18.6C48.6 85.9 112.2 29.1 190.6 8.4C165.1 42.6 145.3 96.1 135.3 160zM8.1 192H131.2c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zM194.7 446.6c-11.6-26-20.9-58.2-27-94.6H344.3c-6.1 36.4-15.5 68.6-27 94.6c-10.5 23.6-22.2 40.7-33.5 51.5C272.6 508.8 263.3 512 256 512s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6C112.2 482.9 48.6 426.1 18.6 352H135.3zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6c25.5-34.2 45.2-87.7 55.3-151.6H493.4z\"></path></svg>\n                          </a> \n                          <a class=\"pr-1\" href=\"https://www.linkedin.com/company/mm-mega-market-vietnam/\" target=\"_blank\">\n                            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" fill=\"currentColor\" class=\"bi bi-linkedin\" viewBox=\"0 0 16 16\">\n                              <path d=\"M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z\"></path>\n                            </svg>\n                          </a>                        \n                          <a class=\"pr-1\" href=\"https://www.facebook.com/MMMegaMarketVietnam\" target=\"_blank\">\n                            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" fill=\"#1778f2\" class=\"bi bi-facebook\" viewBox=\"0 0 16 16\">\n                              <path d=\"M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951\"></path>\n                            </svg>\n                          </a>\n                          \n                          <a class=\"pr-1\" href=\"https://www.youtube.com/c/MMMegaMarketVietnam\" target=\"_blank\">\n                            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" fill=\"#dc3545\" class=\"bi bi-youtube\" viewBox=\"0 0 16 16\">\n                              <path d=\"M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z\"></path>\n                            </svg>\n                          </a>\n                        </div>\n                        \n                    </div>\n                </div>\n            </div>\n        </div>\n        <hr>\n    </div>\n</section>",
           "_JSplaceholders": [],
           "_PHPplaceholders": [],
           "_isUserblock": true,
           "_cid": "uhygCSMbhw",
           "_anchor": "features15-8c",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": "witsec-code-editor/components",
-          "_isSecondary": true,
-          "_styles": {
-            "& when not (@fullScreen)": {
-              "padding-top": "(@paddingTop * 15px)",
-              "padding-bottom": "(@paddingBottom * 15px)"
-            },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            "img": {
-              "width": "auto"
-            },
-            ".custom-hr": {
-              "width": "100%",
-              "border": "none",
-              "border-top": "1px solid #black",
-              "margin": "20px auto"
-            }
-          },
-          "_name": "witsec-html-block",
-          "_sourceTheme": "mobirise5",
-          "_customHTML": "<section class=\"mbr-section mbr-section--no-padding\" data-bg-video=\"{{bg.type == 'video' &amp;&amp; bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen, 'mbr-parallax-background': bg.parallax}\">\n\n<mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"2\" condition=\"fullScreen == false\">\n    <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"2\" condition=\"fullScreen == false\">\n\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax=\"\">\n    <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background-1.jpg\" parallax=\"\">\n    <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected=\"\">\n    <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n    </fieldset>\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked=\"\">\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n    <input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n    <!-- End block parameters -->\n</mbr-parameters>\n\n<div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n</div>\n\n<!-- Place your own code below -->\n<div class=\"container\">\n  <hr class=\"custom-hr\">\n</div>\n\n<!-- Place your own code above -->\n\n</section>",
-          "_JSplaceholders": [],
-          "_PHPplaceholders": [],
-          "_isUserblock": true,
-          "_cid": "uhygCTEpVx",
-          "_anchor": "witsec-html-block-8d",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "padding-top": "(@paddingTop * 1rem)",
-            "padding-bottom": "(@paddingBottom * 1rem)",
-            "background-color": "@bgColor"
-          },
-          "_name": "content5",
-          "_sourceTheme": "mobirise5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"content5\" group=\"Content\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"10\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-6 col-lg-3\">\n                <div class=\"image-wrapper d-flex justify-content-center\">\n                    <img style=\"width:70%\" src=\"@PROJECT_PATH@/assets/images/badge-1.png\" alt>\n                    <p class=\"mbr-description mbr-fonts-style pt-2 align-center\" mbr-theme-style=\"display-4\" mbr-if=\"showDescription\" data-app-selector=\".mbr-description\">\n                    Image Description</p>\n                </div>\n            </div>\n            <div class=\"col-md-12 col-lg-9\">\n                <h3 class=\"mbr-section-title mbr-fonts-style mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\">\n                    <b>Article Title</b>\n                </h3>\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Định hướng chiến lược xây dựng nguồn nhân lực hạnh phúc</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\">\n                    MM Mega Market Việt Nam theo đuổi triết lý 3C: lấy Khách Hàng làm Trung tâm, Chủ Động Thay Đổi và Thúc Đẩy Cộng tác - kim chỉ nam cho mọi hoạt động kinh doanh và quản lý nhân sự. Triết lý này bao gồm những nội dung chính:</p>\n                <ul>\n                <li class=\"mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\">Đối xử với nhân viên công bằng, tin tưởng và tôn trọng.</li>\n                <li class=\"mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\">Tạo môi trường năng động thông qua không gian làm việc thoải mái, khơi dậy tiềm năng của nhân viên.</li>\n                <li class=\"mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\">Trao quyền và phát triển nhân tài để cùng công ty phát triển.</li>\n                <li class=\"mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\">Xây dựng tinh thần đồng đội và hợp tác trên toàn nhóm để đạt được mục tiêu chung.</li>\n                </ul>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_PHPplaceholders": [],
-          "_JSplaceholders": [],
-          "_cid": "uhygCV6wI8",
-          "_anchor": "content5-8f",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
@@ -7267,13 +7128,22 @@
                 "background-image": "url(@fallBackImage)"
               }
             },
+            "& when (@fullWidth)": {
+              ".text-wrapper": {
+                "padding": "1rem"
+              }
+            },
             "@media (max-width: 991px)": {
               ".image-wrapper": {
                 "margin-bottom": "1rem"
               }
             },
             "img": {
-              "width": "100%"
+              "width": "50%",
+              "margin": "0 auto"
+            },
+            ".mbr-section-title": {
+              "text-align": "left"
             },
             ".progress-container": {
               "width": "100%",
@@ -7327,18 +7197,23 @@
               "to": {
                 "background": "conic-gradient(#ffc000 83%, #eeeeee 17%)"
               }
+            },
+            ".mbr-description": {
+              "text-align": "center"
+            },
+            "@media (max-width: 768px)": {
+              "padding-bottom": "(@paddingBottom * 0.5rem)"
             }
           },
-          "_name": "image3",
+          "_name": "image1",
           "_sourceTheme": "mobirise5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image3\" group=\"Images & Videos\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"1\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"range\" name=\"textWidth\" title=\"Image\" min=\"4\" max=\"12\" step=\"1\" value=\"7\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">         \n            <div class=\"col-12 col-lg-4 mb-3\">\n                <div class=\"item-wrapper d-flex justify-content-center\">\n                  <div class=\"circle-style progress-circle1 item-wrapper\" data-circle=\"83\" data-color=\"#ffc000\">\n                    <span data-counter=\"83\" data-start=\"0\" class=\"mbr-description mbr-fonts-style\" mbr-theme-style=\"display-7\">83%</span>\n                  </div>\n                </div>                 \n                  <p class=\"mbr-description mbr-fonts-style mt-2 align-center\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-description\"><b>Nhân viên tự hào khi là một thành viên của công ty</b><br></p>\n            </div>\n            <div class=\"col-12 col-lg-4 mb-3\">\n                <div class=\"item-wrapper d-flex justify-content-center\">\n                  <div class=\"circle-style progress-circle2 item-wrapper\" data-circle=\"82\" data-color=\"#ffc720\">\n                    <span data-counter=\"82\" data-start=\"0\" class=\"mbr-description mbr-fonts-style\" mbr-theme-style=\"display-7\">82%</span>\n                  </div>\n                </div>                 \n                  <p class=\"mbr-description mbr-fonts-style mt-2 align-center\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-description\"><b>Nhân viên cam kết với thành công &amp; tương lai của công ty</b><br></p>\n            </div>\n            <div class=\"col-12 col-lg-4 mb-3\">\n                <div class=\"item-wrapper d-flex justify-content-center\">\n                  <div class=\"circle-style progress-circle3 item-wrapper\" data-circle=\"74\" data-color=\"#fcd04c\">\n                    <span data-counter=\"74\" data-start=\"0\" class=\"mbr-description mbr-fonts-style\" mbr-theme-style=\"display-7\">74%</span>\n                  </div>\n                </div>                 \n                  <p class=\"mbr-description mbr-fonts-style mt-2 align-center\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-description\"><b>Nhân viên thấy thoải mái và được là chính mình tại đây</b><br></p>\n            </div>\n        </div>\n    </div>\n    <script>\nconst ease = {\n  linear: t => t,\n  inOutQuad: t => t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t,\n};\n\nconst animateCircle = (circle, targetValue, color) => {\n  const duration = 1500;\n  let startValue = 0;\n  const startTime = Date.now();\n\n  const updateCircle = () => {\n    const elapsedTime = Date.now() - startTime;\n    const progress = Math.min(elapsedTime / duration, 1);\n    const easedProgress = ease.inOutQuad(progress);\n    const currentValue = Math.round(startValue + easedProgress * (targetValue - startValue));\n    \n    const startAngle = 0;\n    const endAngle = currentValue * 3.6; // 1% = 3.6 degrees\n\n    circle.querySelector('span').textContent = `${currentValue}%`;\n    circle.style.background = `conic-gradient(${color} ${startAngle}deg ${endAngle}deg, #eeeeee ${endAngle}deg 360deg)`;\n\n    if (progress < 1) {\n      requestAnimationFrame(updateCircle);\n    }\n  };\n\n  requestAnimationFrame(updateCircle);\n};\n\nconst counter = (EL) => {\n  const endValue = parseInt(EL.dataset.counter, 10);\n  const color = EL.parentElement.getAttribute('data-color');\n  animateCircle(EL.parentElement, endValue, color);\n};\n\nconst observerOptions = {\n  root: null,\n  rootMargin: '0px',\n  threshold: 0.1 // Trigger when at least 10% of the element is visible\n};\n\nconst observerCallback = (entries, observer) => {\n  entries.forEach(entry => {\n    if (entry.isIntersecting) {\n      counter(entry.target);\n      observer.unobserve(entry.target); // Stop observing once the animation has started\n    }\n  });\n};\n\nconst observer = new IntersectionObserver(observerCallback, observerOptions);\n\ndocument.querySelectorAll(\"[data-counter]\").forEach(el => {\n  observer.observe(el);\n});\n    </script>\n</section>",
-          "_JSplaceholders": [
-            "<script>\nconst ease = {\n  linear: t => t,\n  inOutQuad: t => t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t,\n};\n\nconst animateCircle = (circle, targetValue, color) => {\n  const duration = 1500;\n  let startValue = 0;\n  const startTime = Date.now();\n\n  const updateCircle = () => {\n    const elapsedTime = Date.now() - startTime;\n    const progress = Math.min(elapsedTime / duration, 1);\n    const easedProgress = ease.inOutQuad(progress);\n    const currentValue = Math.round(startValue + easedProgress * (targetValue - startValue));\n    \n    const startAngle = 0;\n    const endAngle = currentValue * 3.6; // 1% = 3.6 degrees\n\n    circle.querySelector('span').textContent = `${currentValue}%`;\n    circle.style.background = `conic-gradient(${color} ${startAngle}deg ${endAngle}deg, #eeeeee ${endAngle}deg 360deg)`;\n\n    if (progress < 1) {\n      requestAnimationFrame(updateCircle);\n    }\n  };\n\n  requestAnimationFrame(updateCircle);\n};\n\nconst counter = (EL) => {\n  const endValue = parseInt(EL.dataset.counter, 10);\n  const color = EL.parentElement.getAttribute('data-color');\n  animateCircle(EL.parentElement, endValue, color);\n};\n\nconst observerOptions = {\n  root: null,\n  rootMargin: '0px',\n  threshold: 0.1 // Trigger when at least 10% of the element is visible\n};\n\nconst observerCallback = (entries, observer) => {\n  entries.forEach(entry => {\n    if (entry.isIntersecting) {\n      counter(entry.target);\n      observer.unobserve(entry.target); // Stop observing once the animation has started\n    }\n  });\n};\n\nconst observer = new IntersectionObserver(observerCallback, observerOptions);\n\ndocument.querySelectorAll(\"[data-counter]\").forEach(el => {\n  observer.observe(el);\n});\n    </script>"
-          ],
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image1\" group=\"Images & Videos\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"3\" condition=\"fullScreen == false\">\n        <input type=\"range\" name=\"textWidth\" title=\"Image\" min=\"4\" max=\"8\" step=\"1\" value=\"4\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Description\" name=\"showDescription\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth}\">\n        <div class=\"row\">\n            <div class=\"col-12 col-lg-4\">\n                <div class=\"image-wrapper\">\n                    <img src=\"@PROJECT_PATH@/assets/images/badge-1.png\" alt=\"Mobirise Website Builder\">\n                </div>\n            </div>\n            <div class=\"col-12 col-lg-8\">\n                <div class=\"text-wrapper\">\n                    <h3 class=\"mbr-section-title mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\"><b>Giới thiệu công ty</b></h3>\n                   <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">Thành lập năm 2002, MM Mega Market Việt Nam là nhà tiên phong mô hình Trung tâm Bán sỉ Hiện đại, cung cấp nguồn cung đa dạng, đảm bảo chất lượng cho hàng trăm ngàn khách hàng chuyên nghiệp trên toàn quốc.</p>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">Với hơn 21 Trung tâm Bán sỉ &amp; Siêu thị, MM Mega Market cam kết Giải pháp Phù hợp, đáp ứng mọi nhu cầu với đa dạng sản phẩm chất lượng cao, giá cả cạnh tranh. Hơn thế nữa, doanh nghiệp còn tích cực hỗ trợ cộng đồng và địa phương, góp phần vào sự phát triển chung.</p>\n\n                    <h3 class=\"mbr-section-title mbr-fonts-style align-center mt-4 mb-3\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\"><b>Định hướng chiến lược xây dựng nguồn nhân lực hạnh phúc</b></h3>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">MM Mega Market Việt Nam theo đuổi triết lý 3C: lấy Khách Hàng làm Trung tâm, Chủ Động Thay Đổi và Thúc Đẩy Cộng tác - kim chỉ nam cho mọi hoạt động kinh doanh và quản lý nhân sự. Triết lý này bao gồm những nội dung chính:</p>\n                    <ul>\n                        <li class=\"mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\">Đối xử với nhân viên công bằng, tin tưởng và tôn trọng.</li>\n                        <li class=\"mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\">Tạo môi trường năng động thông qua không gian làm việc thoải mái, khơi dậy tiềm năng của nhân viên.</li>\n                        <li class=\"mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\">Trao quyền và phát triển nhân tài để cùng công ty phát triển.</li>\n                        <li class=\"mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\">Xây dựng tinh thần đồng đội và hợp tác trên toàn nhóm để đạt được mục tiêu chung.</li>\n                    </ul>\n\n                    <div class=\"row chart-info\">\n                        <div class=\"col-12 col-lg-4 mb-3\">\n                            <div class=\"item-wrapper d-flex justify-content-center\">\n                                <div class=\"circle-style progress-circle1 item-wrapper\" data-circle=\"83\" data-color=\"#ffc000\">\n                                    <span data-counter=\"83\" data-start=\"0\" class=\"mbr-description mbr-fonts-style\" mbr-theme-style=\"display-7\">83%</span>\n                                </div>\n                            </div>                 \n                            <p class=\"mbr-description mbr-fonts-style mt-2 align-center\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-description\"><b>Nhân viên tự hào khi là một thành viên của công ty</b></p>\n                        </div>\n\n                        <div class=\"col-12 col-lg-4 mb-3\">\n                            <div class=\"item-wrapper d-flex justify-content-center\">\n                                <div class=\"circle-style progress-circle2 item-wrapper\" data-circle=\"82\" data-color=\"#ffc720\">\n                                    <span data-counter=\"82\" data-start=\"0\" class=\"mbr-description mbr-fonts-style\" mbr-theme-style=\"display-7\">82%</span>\n                                </div>\n                            </div>                 \n                            <p class=\"mbr-description mbr-fonts-style mt-2 align-center\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-description\"><b>Nhân viên cam kết với thành công &amp; tương lai của công ty</b><br></p>\n                        </div>\n\n                        <div class=\"col-12 col-lg-4 mb-3\">\n                            <div class=\"item-wrapper d-flex justify-content-center\">\n                                <div class=\"circle-style progress-circle3 item-wrapper\" data-circle=\"74\" data-color=\"#fcd04c\">\n                                    <span data-counter=\"74\" data-start=\"0\" class=\"mbr-description mbr-fonts-style\" mbr-theme-style=\"display-7\">74%</span>\n                                </div>\n                            </div>                 \n                            <p class=\"mbr-description mbr-fonts-style mt-2 align-center\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-description\"><b>Nhân viên thấy thoải mái và được là chính mình tại đây</b><br></p>\n                        </div>\n                    </div>\n                </div>\n            </div>        \n            \n        </div>\n    </div>\n\n\n    \n    [JS_CODE_0]\n</section>",
+          "_cid": "uhVBrTa48X",
+          "_anchor": "image1-92",
           "_PHPplaceholders": [],
-          "_isUserblock": true,
-          "_cid": "uhygCVNrnN",
-          "_anchor": "image3-8g",
+          "_JSplaceholders": [
+            "<script>\n        const ease = {\n        linear: t => t,\n        inOutQuad: t => t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t,\n        };\n\n        const animateCircle = (circle, targetValue, color) => {\n        const duration = 1500;\n        let startValue = 0;\n        const startTime = Date.now();\n\n        const updateCircle = () => {\n            const elapsedTime = Date.now() - startTime;\n            const progress = Math.min(elapsedTime / duration, 1);\n            const easedProgress = ease.inOutQuad(progress);\n            const currentValue = Math.round(startValue + easedProgress * (targetValue - startValue));\n            \n            const startAngle = 0;\n            const endAngle = currentValue * 3.6; // 1% = 3.6 degrees\n\n            circle.querySelector('span').textContent = `${currentValue}%`;\n            circle.style.background = `conic-gradient(${color} ${startAngle}deg ${endAngle}deg, #eeeeee ${endAngle}deg 360deg)`;\n\n            if (progress < 1) {\n            requestAnimationFrame(updateCircle);\n            }\n        };\n\n        requestAnimationFrame(updateCircle);\n        };\n\n        const counter = (EL) => {\n        const endValue = parseInt(EL.dataset.counter, 10);\n        const color = EL.parentElement.getAttribute('data-color');\n        animateCircle(EL.parentElement, endValue, color);\n        };\n\n        const observerOptions = {\n        root: null,\n        rootMargin: '0px',\n        threshold: 0.1 // Trigger when at least 10% of the element is visible\n        };\n\n        const observerCallback = (entries, observer) => {\n        entries.forEach(entry => {\n            if (entry.isIntersecting) {\n            counter(entry.target);\n            observer.unobserve(entry.target); // Stop observing once the animation has started\n            }\n        });\n        };\n\n        const observer = new IntersectionObserver(observerCallback, observerOptions);\n\n        document.querySelectorAll(\"[data-counter]\").forEach(el => {\n        observer.observe(el);\n        });\n    </script>"
+          ],
           "_protectedParams": [],
           "_global": false,
           "_once": false,
@@ -7349,10 +7224,10 @@
           "_styles": {
             "padding-top": "(@paddingTop * 1rem)",
             "padding-bottom": "(@paddingBottom * 1rem)",
-            "& when (@bg-type = \"color\")": {
+            "& when (@bg-type = 'color')": {
               "background-color": "@bg-value"
             },
-            "& when (@bg-type = \"image\")": {
+            "& when (@bg-type = 'image')": {
               "background-image": "url(@bg-value)"
             },
             ".mbr-fallback-image.disabled": {
@@ -7370,103 +7245,61 @@
                 "background-image": "url(@fallBackImage)"
               }
             },
-            ".item:not(:nth-last-child(1))": {
-              "margin-bottom": "2rem"
+            ".image-wrapper": {
+              "width": "80px",
+              "height": "80px",
+              "border-radius": "50%",
+              "margin-top": "5px",
+              "margin-right": "1rem",
+              "overflow": "hidden",
+              "img": {
+                "height": "100%",
+                "width": "100%",
+                "object-fit": "cover"
+              }
             },
             ".item-wrapper": {
-              "background-color": "#eeeeee",
-              "padding": "1rem",
-              "& when (@transparentCard)": {
-                "background-color": "transparent"
+              "background": "linear-gradient(109.51deg, #087096 -40.38%, rgba(8, 112, 150, 0) 73.24%), #104c97",
+              "padding": "3rem 8rem",
+              "border-left": "20px solid #ffc000 "
+            },
+            ".mbr-text": {
+              "color": "#ffffff"
+            },
+            ".name": {
+              "color": "#fafafa"
+            },
+            ".position": {
+              "color": "#bbbbbb"
+            },
+            ".item-wrapper .display-5": {
+              "font-size": "1.6rem"
+            },
+            ".info-testimonial": {
+              "vertical-align": "middle",
+              "align-items": "center"
+            },
+            "@media (max-width: 768px)": {
+              ".item-wrapper .display-5": {
+                "font": "1rem!important"
               },
-              "border-radius": "20px"
-            },
-            ".image-wrapper img": {
-              "width": "100%",
-              "object-fit": "cover"
-            },
-            ".social-row": {
-              ".soc-item": {
-                "display": "inline-block",
-                "text-align": "center",
-                "border-radius": "50%",
-                "margin-right": "0.6rem",
-                "margin-bottom": "1rem",
-                "padding": "0.5rem",
-                "border": "2px solid @socialIconColor",
-                "transition": "all 0.3s",
-                ".mbr-iconfont": {
-                  "display": "flex",
-                  "justify-content": "center",
-                  "align-content": "center",
-                  "color": "@socialIconColor",
-                  "font-size": "1.5rem",
-                  "transition": "all 0.3s"
-                },
-                "&:hover": {
-                  "background-color": "@socialIconColor",
-                  ".mbr-iconfont": {
-                    "color": "contrast(@socialIconColor)"
-                  }
-                }
-              }
-            },
-            "@media (max-width: 767px)": {
-              ".card-box": {
-                "padding": "1rem"
-              }
-            },
-            "@media (min-width: 768px)": {
-              ".card-box": {
-                "padding-right": "2rem"
-              }
-            },
-            "@media (min-width: 992px)": {
-              ".card-box": {
-                "padding-left": "0"
-              }
-            },
-            "@media (max-width: 450px)": {
-              ".quote": {
-                "display": "block!important"
+              ".item-wrapper": {
+                "padding": "2rem"
               },
-              ".icon": {
-                "margin": "1rem 0 0 0"
+              ".text-wrapper .display-4": {
+                "font-size": "0.8rem"
               },
-              ".icon svg": {
-                "width": "50px",
-                "height": "50px"
-              }
-            },
-            ".image-wrapper": {
-              "border": "10px solid white"
-            },
-            ".mbr-text, .social-row": {
-              "color": "#232323"
-            },
-            ".card-title": {
-              "color": "#353535",
-              "text-align": "left"
-            },
-            ".card-subtitle": {
-              "color": "#353535",
-              "text-align": "left"
-            },
-            ".icon": {
-              "position": "absolute",
-              "transform": "rotate(180deg)",
-              "bottom": "0rem",
-              "right": "0"
+              "padding-top": "(@paddingTop * 0.5rem)",
+              "padding-bottom": "(@paddingBottom * 0.5rem)"
             }
           },
-          "_name": "team2",
+          "_name": "testimonials2",
           "_sourceTheme": "mobirise5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"team2\" group=\"Team\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\" xmlns=\"http://www.w3.org/1999/html\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" name=\"fullWidth\" title=\"Full Width\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <input type=\"range\" name=\"imageWidth\" title=\"Image\" min=\"2\" max=\"6\" step=\"1\" value=\"3\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <header>Card</header>\n        <input type=\"checkbox\" title=\"Transparent\" name=\"transparentCard\">\n        <input type=\"color\" title=\"Color\" name=\"cardBg\" value=\"#ffffff\" condition=\"!transparentCard\">\n        <select title=\"Amount\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\" selected>2</option>\n            <option value=\"3\">3</option>\n        </select>\n        <header condition=\"showSocial\">Social</header>\n        <input type=\"checkbox\" title=\"Social\" name=\"showSocial\" checked>\n        <input type=\"range\" name=\"socialCount\" title=\"Count\" min=\"1\" max=\"5\" step=\"1\" value=\"3\" condition=\"showSocial\">\n        <input type=\"color\" title=\"Color\" name=\"socialIconColor\" value=\"#6592e6\" condition=\"showSocial\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#cebfaf\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth}\">\n        <div class=\"item features-image\">\n            <div class=\"item-wrapper\">\n                <div class=\"row align-items-center\">\n                    <div class=\"col-12 col-md-3\">\n                        <div class=\"image-wrapper\">\n                            <img src=\"@PROJECT_PATH@/assets/images/thanh-nguyen.jpg\" alt>\n                        </div>\n                    </div>\n                     \n                    <div class=\"col-12 col-md-9\">\n                      <div class=\"icon\">              \n                          <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"128\" height=\"128\" fill=\"black\" class=\"bi bi-quote\" viewBox=\"0 0 16 16\">\n                            <path d=\"M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z\"></path>\n                          </svg>\n                      </div>\n                      <div class=\"d-flex align-items-start quote\">                                 \n                        <div class=\"card-box\">\n                            <p class=\"mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text, .social-row\" mbr-theme-style=\"display-7\" mbr-if=\"showText\"><i>MM Mega Market Việt Nam đã xây dựng chiến lược đầu tư bài bản vào nguồn nhân lực với hệ thống chương trình toàn diện: Hệ thống quản lý học tập hiện đại, chương trình phát triển năng lực tương lai, sáng kiến đào tạo sáng tạo, chương trình tiếng Anh, cuộc thi kỹ năng.&nbsp;</i><i>Ban lãnh đạo thể hiện cam kết mạnh mẽ qua sự quan tâm, đầu tư và tạo dựng văn hóa doanh nghiệp cởi mở. Nhờ vậy, MM Mega Market Việt Nam đạt được thành công: Mức độ hài lòng của nhân viên tăng, sự gắn kết với doanh nghiệp cao, hiệu suất công việc tốt.</i><br></p>\n                            <h5 class=\"card-title mbr-fonts-style m-0 mb-3\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><b>Bà Thanh Nguyễn</b></h5>\n                            <h6 class=\"card-subtitle mbr-fonts-style mb-3\" mbr-theme-style=\"display-4\" mbr-if=\"showSubtitle\" data-app-selector=\".card-subtitle\"><b><i>GĐĐH &amp; Truyền cảm hứng Hạnh phúc&nbsp;</i></b><b style=\"font-size: 1rem;\"><i>Anphabe</i></b></h6>\n                        </div>                                              \n                      </div>\n                        \n                    </div>\n                                      \n                </div>\n            </div>\n            \n        </div>\n        \n        \n    </div>\n</section>",
-          "_JSplaceholders": [],
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"testimonials2\" group=\"Testimonials\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\" plugins=\"mobirise-icons2\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" name=\"fullWidth\" title=\"Full Width\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Name\" name=\"showName\" checked>\n        <input type=\"checkbox\" title=\"Position\" name=\"showPosition\" checked>\n        <select title=\"Columns\" name=\"columns\">\n            <option value=\"3\">4</option>\n            <option value=\"4\">3</option>\n            <option value=\"6\">2</option>\n            <option value=\"12\" selected>1</option>\n        </select>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n    \n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <h3 class=\"mbr-section-title mbr-fonts-style align-center mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\">\n            <b>Testimonials</b>\n        </h3>\n        <div class=\"row justify-content-center\">\n            <div class=\"item features-without-image mb-5 col-12 col-md-{{columns}}\">\n                <div class=\"item-wrapper\">\n                    <p class=\"mbr-text mbr-fonts-style mb-4\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-text\">MM Mega Market Việt Nam đã xây dựng chiến lược đầu tư bài bản vào nguồn nhân lực với hệ thống chương trình toàn diện: Hệ thống quản lý học tập hiện đại, chương trình phát triển năng lực tương lai, sáng kiến đào tạo sáng tạo, chương trình tiếng Anh, cuộc thi kỹ năng. Ban lãnh đạo thể hiện cam kết mạnh mẽ qua sự quan tâm, đầu tư và tạo dựng văn hóa doanh nghiệp cởi mở. Nhờ vậy, MM Mega Market Việt Nam đạt được thành công: Mức độ hài lòng của nhân viên tăng, sự gắn kết với doanh nghiệp cao, hiệu suất công việc tốt.</p>\n                    <div class=\"d-flex mb-md-0 mb-4 info-testimonial\">\n                        <div class=\"image-wrapper\">\n                            <img src=\"@PROJECT_PATH@/assets/images/thanh-nguyen.jpg\" alt=\"Mobirise Website Builder\">\n                        </div>\n                        <div class=\"text-wrapper\">\n                            <p class=\"name mbr-fonts-style mb-1\" mbr-if=\"showName\" mbr-theme-style=\"display-4\" data-app-selector=\".name\">\n                                <b>THANH NGUYỄN</b></p>\n                            <p class=\"position mbr-fonts-style\" mbr-if=\"showPosition\" mbr-theme-style=\"display-4\" data-app-selector=\".position\">GĐĐH &amp; Truyền cảm hứng hạnh phúc tại Anphabe</p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "uhVN2RdfYK",
+          "_anchor": "testimonials2-93",
           "_PHPplaceholders": [],
-          "_isUserblock": true,
-          "_cid": "uhygCWKlbr",
-          "_anchor": "team2-8h",
+          "_JSplaceholders": [],
           "_protectedParams": [],
           "_global": false,
           "_once": false,
@@ -7498,7 +7331,7 @@
           },
           "_name": "witsec-html-block",
           "_sourceTheme": "mobirise5",
-          "_customHTML": "<section class=\"mbr-section mbr-section--no-padding\" data-bg-video=\"{{bg.type == 'video' &amp;&amp; bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen, 'mbr-parallax-background': bg.parallax}\">\n\n<mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"2\" condition=\"fullScreen == false\">\n    <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"2\" condition=\"fullScreen == false\">\n\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax=\"\">\n    <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background-1.jpg\" parallax=\"\">\n    <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected=\"\">\n    <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n    </fieldset>\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked=\"\">\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n    <input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n    <!-- End block parameters -->\n</mbr-parameters>\n\n<div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n</div>\n\n<!-- Place your own code below -->\n<div class=\"container\">\n  <hr class=\"custom-hr\">\n</div>\n\n<!-- Place your own code above -->\n\n</section>",
+          "_customHTML": "<section class=\"mbr-section mbr-section--no-padding\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen, 'mbr-parallax-background': bg.parallax}\">\n\n<mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"1\" condition=\"fullScreen == false\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"1\" condition=\"fullScreen == false\">\n\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n    <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background-1.jpg\" parallax>\n    <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n    <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n    </fieldset>\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n</mbr-parameters>\n\n<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n</div>\n\n<!-- Place your own code below -->\n<div class=\"container\">\n  <hr class=\"custom-hr\">\n</div>\n\n<!-- Place your own code above -->\n\n</section>",
           "_JSplaceholders": [],
           "_PHPplaceholders": [],
           "_isUserblock": true,
