@@ -79,7 +79,7 @@
       }
     ],
     "uniqCompNum": 248,
-    "versionPublish": "5.9.17",
+    "versionPublish": "5.9.0",
     "imageResize": false,
     "screenshot": "screenshot.png",
     "witsec-jquery": "3.5.1",
