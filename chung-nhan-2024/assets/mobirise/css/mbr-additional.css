@@ -14795,16 +14795,36 @@ a {
 .cid-ukFevO48gt ul {
   list-style-type: decimal;
 }
-.cid-ukFfbOmk7o {
-  padding-top: 0rem;
+.cid-ulpxNA0fll {
+  padding-top: 1rem;
   padding-bottom: 1rem;
   background-color: #ffffff;
 }
-.cid-ukFfbOmk7o .mbr-text {
-  text-align: center;
+.cid-ulpxNA0fll .mbr-fallback-image.disabled {
+  display: none;
 }
-.cid-ukFfbOmk7o p {
-  background-color: yellow;
+.cid-ulpxNA0fll .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+@media (max-width: 991px) {
+  .cid-ulpxNA0fll .image-wrapper {
+    margin-bottom: 1rem;
+  }
+}
+.cid-ulpxNA0fll .row {
+  flex-direction: row-reverse;
+}
+.cid-ulpxNA0fll img {
+  width: 100%;
+}
+.cid-ulpxNA0fll .image-wrapper {
+  background: #f1f1f1;
 }
 .cid-ukFfs7ceRx {
   padding-top: 0rem;
