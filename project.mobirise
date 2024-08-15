@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Happiness At Work Certification",
-    "currentPage": "chung-nhan-2021.html",
+    "currentPage": "index.html",
     "theme": {
       "name": "mobirise5",
       "title": "Mobirise 5",
@@ -79,7 +79,7 @@
       }
     ],
     "uniqCompNum": 248,
-    "versionPublish": "5.9.0",
+    "versionPublish": "5.9.17",
     "imageResize": false,
     "screenshot": "screenshot.png",
     "witsec-jquery": "3.5.1",
