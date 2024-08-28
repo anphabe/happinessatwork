@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Happiness At Work Certification",
-    "currentPage": "chung-nhan-2023.html",
+    "currentPage": "index.html",
     "theme": {
       "name": "mobirise5",
       "title": "Mobirise 5",
@@ -30,13 +30,13 @@
         "isScrollToTopButton": false
       },
       "additionalSetColors": [
+        "#00314f",
+        "#efefef",
         "#f1f8ff",
         "#f8f2eb",
         "#f5f5f5",
         "#ffc000",
-        "#004a77",
-        "#fff600",
-        "#f0f3f9"
+        "#004a77"
       ]
     },
     "path": "@PROJECT_PATH@",
@@ -78,8 +78,8 @@
         "url": "https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
       }
     ],
-    "uniqCompNum": 248,
-    "versionPublish": "5.9.6",
+    "uniqCompNum": 249,
+    "versionPublish": "5.9.0",
     "imageResize": false,
     "screenshot": "screenshot.png",
     "witsec-jquery": "3.5.1",
@@ -98,8 +98,6 @@
     "global_after_body": "<!-- Google Tag Manager (noscript) -->\n<noscript><iframe src=\"https://tr.anphabe.com/ns.html?id=GTM-P9VZ8L\"\nheight=\"0\" width=\"0\" style=\"display:none;visibility:hidden\"></iframe></noscript>\n<!-- End Google Tag Manager (noscript) -->",
     "global_header_custom": "<!-- Google Tag Manager -->\n<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\nnew Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\nj=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n'https://tr.anphabe.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n})(window,document,'script','dataLayer','GTM-P9VZ8L');</script>\n<!-- End Google Tag Manager -->\n<script>\nfunction keep_url_query(){\n    let query = window.location.search;\n    \n    if(query == \"\") {\n        return false;\n    }\n    let searchParams = new URLSearchParams(query);\n\n    let atags = document.getElementsByTagName(\"a\"); \n    let i;\n    for (i = 0; i < atags.length; i++) {\n        let new_url = new URL(atags[i].href);\n        for (const [key, value] of searchParams) {\n            new_url.searchParams.set(key, value);\n        }\n        atags[i].href = new_url.toString();  \n    } \n\n}\n\nif (\n    document.readyState === \"complete\" ||\n    (document.readyState !== \"loading\" && !document.documentElement.doScroll)\n) {\n  keep_url_query();\n} else {\n  document.addEventListener(\"DOMContentLoaded\", keep_url_query);\n}\n</script>",
     "global_footer_custom": "<script src=\"https://www.anphabe.com/sites/all/modules/mio/sales_lead/js/sales_lead.js\"></script>\n",
-    "publishType": "local",
-    "publishPath": "@PROJECT_PATH@",
     "witsec-language": false
   },
   "pages": {
@@ -709,11 +707,69 @@
           },
           "_name": "header1",
           "_sourceTheme": "mobirise5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header1\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\n        <input type=\"range\" inline name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"9\" step=\"1\">\n        <select title=\"Align\" name=\"contentAlign\">\n            <option value selected>Left</option>\n            <option value=\"justify-content-center\">Center</option>\n            <option value=\"justify-content-end\">Right</option>\n        </select>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubitle\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/homepage-cover-1.jpg\" selected>\n            <input type=\"color\" title=\"Color\" value=\"#fafafa\">\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row {{contentAlign}}\">\n            <div class=\"col-12 col-lg-6\">\n                <h1 class=\"mbr-section-title mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\"><b>HẠNH PHÚC ĐÍCH THỰC TRONG CÔNG VIỆC</b></h1>\n                <div class=\"col-lg-10\">\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Nhân viên thực sự hạnh phúc khi họ gắn kết cả lý trí và tình cảm với công việc và công ty, có động lực để đóng góp những nỗ lực cho thành công của công ty cũng như cam kết gắn bó lâu dài.</p>\n                </div>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn mb-4 mt-2\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-secondary\" href=\"lien-he.html\" data-app-placeholder=\"Type Text\"><b>TÌM HIỂU THÊM</b><span style=\"font-size: 1.4rem;\">➝</span></a></div>\n            </div>\n         </div>\n    </div>    \n</section>",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header1\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\n        <input type=\"range\" inline name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"9\" step=\"1\">\n        <select title=\"Align\" name=\"contentAlign\">\n            <option value selected>Left</option>\n            <option value=\"justify-content-center\">Center</option>\n            <option value=\"justify-content-end\">Right</option>\n        </select>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubitle\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/homepage-cover-1.jpg\" selected>\n            <input type=\"color\" title=\"Color\" value=\"#fafafa\">\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row {{contentAlign}}\">\n            <div class=\"col-12 col-lg-6\">\n                <h1 class=\"mbr-section-title mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\"><b>HẠNH PHÚC ĐÍCH THỰC TRONG CÔNG VIỆC</b></h1>\n                <div class=\"col-lg-10\">\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Nhân viên thực sự hạnh phúc khi họ gắn kết cả lý trí và tình cảm với công việc và công ty, có động lực để đóng góp những nỗ lực cho thành công của công ty cũng như cam kết gắn bó lâu dài.</p>\n                </div>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn mb-4 mt-2\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-secondary\" href=\"lien-he.html\" data-app-placeholder=\"Type Text\"><strong>TÌM HIỂU THÊM</strong><span style=\"font-size: 1.4rem;\">➝</span></a></div>\n            </div>\n         </div>\n    </div>    \n</section>",
           "_cid": "u62eYFraDj",
           "_anchor": "header1-o",
           "_PHPplaceholders": [],
           "_JSplaceholders": [],
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": "witsec-code-editor/components",
+          "_isSecondary": true,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "img": {
+              "width": "auto"
+            },
+            ".carousel-container": {
+              "width": "100%",
+              "overflow": "hidden",
+              "white-space": "nowrap",
+              "position": "relative"
+            },
+            ".carousel-content": {
+              "display": "inline-block",
+              "white-space": "nowrap",
+              "animation": "scroll-left 200s linear infinite"
+            },
+            ".carousel-content a": {
+              "display": "inline-block",
+              "padding-left": "50px",
+              "font-size": "24px",
+              "font-weight": "bold",
+              "color": "#ffc000"
+            },
+            "@keyframes scroll-left": {
+              "0%": {
+                "transform": "translateX(0%)"
+              },
+              "100%": {
+                "transform": "translateX(-100%)"
+              }
+            }
+          },
+          "_name": "witsec-html-block",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section class=\"mbr-section mbr-section--no-padding\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen, 'mbr-parallax-background': bg.parallax}\">\n\n<mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"1\" condition=\"fullScreen == false\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"1\" condition=\"fullScreen == false\">\n\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n    <input type=\"image\" title=\"Background Image\" value=\"../_images/background.jpg\" parallax>\n    <input type=\"color\" title=\"Background Color\" value=\"#00314f\" selected>\n    <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n    </fieldset>\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n</mbr-parameters>\n\n<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n</div>\n\n<!-- Place your own code below -->\n<div class=\"carousel-container\">\n    <div class=\"carousel-content\">\n        <a href=\"https://happinessatwork.vn/chung-nhan-2024/\" class=\"mbr-section-title mbr-fonts-style\" mbr-theme-style=\"display-7\">28/08/2024 - Công bố 12 Doanh nghiệp được chứng nhận là \"Doanh nghiệp có Nguồn Nhân Lực Hạnh Phúc 2024</a>\n        <a href=\"https://happinessatwork.vn/chung-nhan-2024/\" class=\"mbr-section-title mbr-fonts-style\" mbr-theme-style=\"display-7\">28/08/2024 - Công bố 12 Doanh nghiệp được chứng nhận là \"Doanh nghiệp có Nguồn Nhân Lực Hạnh Phúc 2024</a>\n        <a href=\"https://happinessatwork.vn/chung-nhan-2024/\" class=\"mbr-section-title mbr-fonts-style\" mbr-theme-style=\"display-7\">28/08/2024 - Công bố 12 Doanh nghiệp được chứng nhận là \"Doanh nghiệp có Nguồn Nhân Lực Hạnh Phúc 2024</a>\n        <a href=\"https://happinessatwork.vn/chung-nhan-2024/\" class=\"mbr-section-title mbr-fonts-style\" mbr-theme-style=\"display-7\">28/08/2024 - Công bố 12 Doanh nghiệp được chứng nhận là \"Doanh nghiệp có Nguồn Nhân Lực Hạnh Phúc 2024</a>\n        <a href=\"https://happinessatwork.vn/chung-nhan-2024/\" class=\"mbr-section-title mbr-fonts-style\" mbr-theme-style=\"display-7\">28/08/2024 - Công bố 12 Doanh nghiệp được chứng nhận là \"Doanh nghiệp có Nguồn Nhân Lực Hạnh Phúc 2024</a>\n        <a href=\"https://happinessatwork.vn/chung-nhan-2024/\" class=\"mbr-section-title mbr-fonts-style\" mbr-theme-style=\"display-7\">28/08/2024 - Công bố 12 Doanh nghiệp được chứng nhận là \"Doanh nghiệp có Nguồn Nhân Lực Hạnh Phúc 2024</a>\n        <a href=\"https://happinessatwork.vn/chung-nhan-2024/\" class=\"mbr-section-title mbr-fonts-style\" mbr-theme-style=\"display-7\">28/08/2024 - Công bố 12 Doanh nghiệp được chứng nhận là \"Doanh nghiệp có Nguồn Nhân Lực Hạnh Phúc 2024</a>\n        <a href=\"https://happinessatwork.vn/chung-nhan-2024/\" class=\"mbr-section-title mbr-fonts-style\" mbr-theme-style=\"display-7\">28/08/2024 - Công bố 12 Doanh nghiệp được chứng nhận là \"Doanh nghiệp có Nguồn Nhân Lực Hạnh Phúc 2024</a>\n        <a href=\"https://happinessatwork.vn/chung-nhan-2024/\" class=\"mbr-section-title mbr-fonts-style\" mbr-theme-style=\"display-7\">28/08/2024 - Công bố 12 Doanh nghiệp được chứng nhận là \"Doanh nghiệp có Nguồn Nhân Lực Hạnh Phúc 2024</a>\n        <a href=\"https://happinessatwork.vn/chung-nhan-2024/\" class=\"mbr-section-title mbr-fonts-style\" mbr-theme-style=\"display-7\">28/08/2024 - Công bố 12 Doanh nghiệp được chứng nhận là \"Doanh nghiệp có Nguồn Nhân Lực Hạnh Phúc 2024</a>\n    </div>\n</div>\n<!-- Place your own code above -->\n[JS_CODE_0]\n</section>",
+          "_cid": "umJW8GJMh3",
+          "_anchor": "witsec-html-block-6w",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [
+            "<script>\n  const carouselContent = document.querySelector('.carousel-content');\nconst contentWidth = carouselContent.scrollWidth;\nconst containerWidth = document.querySelector('.carousel-container').offsetWidth;\n\n// Nhân bản nội dung nếu chiều rộng không đủ\nif (contentWidth < containerWidth) {\n    const clone = carouselContent.innerHTML;\n    carouselContent.innerHTML += clone;\n}\n</script>"
+          ],
           "_protectedParams": [],
           "_global": false,
           "_once": false,
