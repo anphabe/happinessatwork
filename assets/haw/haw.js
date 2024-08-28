@@ -175,7 +175,7 @@
     }
     function getDataURL() {
         let award = $('#award').val();
-        let year = $('#select_year').val();
+        let year = $('#year').val();
         let url = new URL(window.location.href);
             
         let industry = $('#select_industry').val();
