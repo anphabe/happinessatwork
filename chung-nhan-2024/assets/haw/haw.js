@@ -197,7 +197,7 @@
             $("#select_industry").change(function () {
                 getData(getDataURL());
             });
-           
+            
             $('#select_year').change(function () {
                 let page = $(this).find(':selected').val();
                 let domain = window.location.protocol + '//' + window.location.hostname;
@@ -208,15 +208,15 @@
     
 
 
-    /**
-     * Adds options to the year select element based on the years
-     * defined in the `years` array. The selected option is set to
-     * the current page URL.
-     *
-     * @name addOptionsToYearSelect
-     * @function
-     * @return {undefined} This function does not return a value.
-     */
+/**
+ * Adds options to the year select element based on the years
+ * defined in the `years` array. The selected option is set to
+ * the current page URL.
+ *
+ * @name addOptionsToYearSelect
+ * @function
+ * @return {undefined} This function does not return a value.
+ */
     function addOptionsToYearSelect() {
         var yearSelect = document.getElementById("select_year");
         
